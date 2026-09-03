@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Property Listings | Oasis Rentals</title>
+<meta name="description" content="Browse rental townhomes, duplexes, and single-family homes in Palm Coast and Deerfield Beach, Florida.">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/images/5be596_c8e881eb4ef94a50908fac950f61e2dd.webp" type="image/webp">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">OASIS RENTALS</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav.main').classList.toggle('open')">☰</button>
+    <nav class="main">
+      <a href="/" >Home</a>
+      <a href="/properties/" class="current">Properties</a>
+      <a href="/blog/" >Blog</a>
+      <a href="/contact/" >Contact</a>
+      <a href="/about/" >About</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="wrap">
+  <h1 class="page-title">Property Listings</h1>
+
+  <div class="filters">
+    <div class="label">Filters</div>
+    <div class="filter-row">
+      <fieldset>
+        <legend>Status</legend>
+        <label><input type="radio" name="status" value="all" checked> All</label>
+        <label><input type="radio" name="status" value="Available"> Available</label>
+        <label><input type="radio" name="status" value="Unavailable"> Unavailable</label>
+      </fieldset>
+      <fieldset>
+        <legend>Bedrooms</legend>
+        <select id="f-bed"><option value="">Select Bedrooms</option>
+          <option>3</option><option>4</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Bathrooms</legend>
+        <select id="f-bath"><option value="">Select Bathrooms</option>
+          <option>2</option><option>2.5</option>
+        </select>
+      </fieldset>
+      <button class="btn" id="f-go">Search</button>
+    </div>
+  </div>
+
+  <p class="count">Number of properties found: <b id="f-count">16</b></p>
+
+  <div class="cards" id="prop-cards">
+    
+    <a class="card" href="/properties/helsinki-circle-lakeview-home/" data-status=""
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_6986824537fc481398bca881f7be5934.webp" alt="Helsinki Circle Lakeview Home" loading="lazy">
+        <span class="badge"></span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Helsinki Circle Lakeview Home</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,900</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/lehigh-woods-oasis-townhome-unit-b/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_8deb3d922bef4d9a822ee00a4b27236b.webp" alt="Lehigh Woods Oasis Townhome Unit B" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Lehigh Woods Oasis Townhome Unit B</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,649 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/lehigh-woods-oasis-townhome-unit-a/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_8deb3d922bef4d9a822ee00a4b27236b.webp" alt="Lehigh Woods Oasis Townhome Unit A" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Lehigh Woods Oasis Townhome Unit A</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,649 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/palm-coast-paradise-unit-b/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_c98b1ca088eb4e4d9d604306b0c36182.webp" alt="Palm Coast Paradise Unit B" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Palm Coast Paradise Unit B</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,650 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/palm-coast-paradise-unit-a/" data-status="Available"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_56285b6251974b0eb02a5f8c866485e2.webp" alt="Palm Coast Paradise Unit A" loading="lazy">
+        <span class="badge">Available</span>
+      </div>
+      <div class="price">$1,829</div>
+      
+      <div class="name">Palm Coast Paradise Unit A</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,650 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/sunny-haven-retreat-unit-b/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_edb3c7bfaf484526b82b34a9c5140d51.webp" alt="Sunny Haven Retreat Unit B" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Sunny Haven Retreat Unit B</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,649 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/sunny-haven-retreat-unit-a/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_651c801c556547849aa371adf063bc14.webp" alt="Sunny Haven Retreat Unit A" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Sunny Haven Retreat Unit A</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,649 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/lehigh-luxury-haven/" data-status="Unavailable"
+       data-bed="4" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_be8f9de3214146dcb833ba99d24cdee1.webp" alt="Lehigh Luxury Haven" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Lehigh Luxury Haven</div>
+      <div class="specs">
+        <span>Bed <b>4</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,691 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/belle-terre-bliss/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_04695e441e4d462891e8eba59e36a77d.webp" alt="Belle Terre Bliss" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Belle Terre Bliss</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>2,450 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/prince-kaarel-ln-haven/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_a5a5a4288c044281b463c9ef1ba8b7b4.webp" alt="Prince Kaarel Ln Haven" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Prince Kaarel Ln Haven</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,721 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/620-parsons-way-retreat/" data-status="Unavailable"
+       data-bed="3" data-bath="2.5">
+      <div class="photo">
+        <img src="/images/5be596_5754c1057b3e4c2f83d7aed4b3823613.webp" alt="620 Parsons Way Retreat" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">620 Parsons Way Retreat</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2.5</b></span>
+        <span>Floors <b>2</b></span>
+        <span>Size <b>1,831 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/612-parsons-way-retreat/" data-status="Unavailable"
+       data-bed="3" data-bath="2.5">
+      <div class="photo">
+        <img src="/images/5be596_c6bee94ede7544648e7b54ff2da5a061.webp" alt="612 Parsons Way Retreat" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">612 Parsons Way Retreat</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2.5</b></span>
+        <span>Floors <b>2</b></span>
+        <span>Size <b>1,831 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/sunset-grove-duplex-a/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_c72e84fc982e4722ada2fa9ae43ef529.webp" alt="Sunset Grove Duplex A" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Sunset Grove Duplex A</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,677 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/sunset-grove-duplex-b/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_c72e84fc982e4722ada2fa9ae43ef529.webp" alt="Sunset Grove Duplex B" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Sunset Grove Duplex B</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,677 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/614-parsons-way-retreat-/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_5754c1057b3e4c2f83d7aed4b3823613.webp" alt="614 Parsons Way Retreat" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">614 Parsons Way Retreat</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>2</b></span>
+        <span>Size <b>2,308 sqft</b></span>
+      </div>
+    </a>
+    
+    <a class="card" href="/properties/serenity-shores-home/" data-status="Unavailable"
+       data-bed="3" data-bath="2">
+      <div class="photo">
+        <img src="/images/5be596_0c987b9d2fa144d298e9c9722fe9c939.webp" alt="Serenity Shores Home" loading="lazy">
+        <span class="badge">Unavailable</span>
+      </div>
+      <div class="occ">Occupied</div>
+      <div class="name">Serenity Shores Home</div>
+      <div class="specs">
+        <span>Bed <b>3</b></span>
+        <span>Bath <b>2</b></span>
+        <span>Floors <b>1</b></span>
+        <span>Size <b>1,700 sqft</b></span>
+      </div>
+    </a>
+    
+  </div>
+</div>
+<script>
+function applyFilters() {
+  const st = document.querySelector('input[name=status]:checked').value;
+  const bed = document.getElementById('f-bed').value;
+  const bath = document.getElementById('f-bath').value;
+  let n = 0;
+  document.querySelectorAll('#prop-cards .card').forEach(c => {
+    const ok = (st === 'all' || c.dataset.status === st)
+            && (!bed || c.dataset.bed === bed)
+            && (!bath || c.dataset.bath === bath);
+    c.style.display = ok ? '' : 'none';
+    if (ok) n++;
+  });
+  document.getElementById('f-count').textContent = n;
+}
+document.getElementById('f-go').addEventListener('click', applyFilters);
+document.querySelectorAll('.filters input,.filters select').forEach(e => e.addEventListener('change', applyFilters));
+</script>
+
+
+<footer class="site">
+  <div class="wrap">
+    <div class="rule"></div>
+    <div class="foot-grid">
+      <div class="foot-logo">OASIS RENTALS</div>
+      <div>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1zm0 2c-3.1 0-3.5 0-4.7.1-1.1.1-1.5.2-1.8.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.7-.3 1.8-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.5.3 1.8.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.7.3 1.8.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.5-.2 1.8-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.7.3-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.5-.3-1.8-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.7-.3-1.8-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.4a5.4 5.4 0 110 10.8 5.4 5.4 0 010-10.8zm0 2a3.4 3.4 0 100 6.8 3.4 3.4 0 000-6.8zm5.6-3.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a><a href="#" aria-label="X"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1.5 2H8l4.4 5.8L18.9 2zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20z"/></svg></a><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.6 2h3.1c.2 1.8 1.3 3.4 3.3 3.9v3.2c-1.2 0-2.3-.4-3.3-1v7.2A6.3 6.3 0 1113.4 9v3.3a3 3 0 103.2 3V2z"/></svg></a>
+        </div>
+        <div class="foot-contact">
+          <p>General Questions:<br><a href="mailto:info@oasis-rentals.com">info@oasis-rentals.com</a><br>(561) 299-0336</p>
+          <p>Palm Coast Properties:<br>386-516-5774<br><a href="mailto:Tyler@386rent.com">Tyler@386rent.com</a></p>
+        </div>
+      </div>
+      <div class="foot-region">Deerfield &amp; Palm Coast</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

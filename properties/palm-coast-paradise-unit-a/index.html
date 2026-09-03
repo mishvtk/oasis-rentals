@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palm Coast Paradise Unit A | Oasis Rentals</title>
+<meta name="description" content="Palm Coast Paradise Unit A — 3 Unity Ct, Palm Coast, FL, USA. Townhouse, 3 bed / 2 bath, 1,650 sqft.">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/images/5be596_c8e881eb4ef94a50908fac950f61e2dd.webp" type="image/webp">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">OASIS RENTALS</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('nav.main').classList.toggle('open')">☰</button>
+    <nav class="main">
+      <a href="/" >Home</a>
+      <a href="/properties/" class="current">Properties</a>
+      <a href="/blog/" >Blog</a>
+      <a href="/contact/" >Contact</a>
+      <a href="/about/" >About</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="wrap">
+  <a class="back" href="/properties/">&lt; Back</a>
+  <div class="prop-head">
+    <div>
+      <h1>Palm Coast Paradise Unit A</h1>
+      <div class="addr">3 Unity Ct, Palm Coast, FL, USA</div>
+    </div>
+    <div class="prop-status">
+      <div class="avail">Available — $1,829/mo</div>
+      <div class="occ"></div>
+    </div>
+  </div>
+
+  
+  <div class="gallery-main"><img id="g-main" src="/images/5be596_b065792eff514f519fd80ba6f5ea1870.webp" alt="Palm Coast Paradise Unit A"></div>
+  <div class="thumbs" id="g-thumbs">
+    
+    <img src="/images/5be596_b065792eff514f519fd80ba6f5ea1870.webp" alt="Photo 1" class="sel" loading="lazy">
+    
+    <img src="/images/5be596_b6c491073ddc410eb6c195817d3a5c9c.webp" alt="Photo 2"  loading="lazy">
+    
+    <img src="/images/5be596_2f12e027f43e4e7b8d808de5f26de02f.webp" alt="Photo 3"  loading="lazy">
+    
+    <img src="/images/5be596_28e065bfa1b04041992fd0be8b7e25ad.webp" alt="Photo 4"  loading="lazy">
+    
+    <img src="/images/5be596_24eb303a65454531920abefe51a4b999.webp" alt="Photo 5"  loading="lazy">
+    
+    <img src="/images/5be596_a11e174d45964e1b8e7a1151ee343dd9.webp" alt="Photo 6"  loading="lazy">
+    
+    <img src="/images/5be596_f5fd6c5f4e314f2db4fa436d6362334d.webp" alt="Photo 7"  loading="lazy">
+    
+    <img src="/images/5be596_803ba90f43554f6eaab9dbfb6f6b9e4f.webp" alt="Photo 8"  loading="lazy">
+    
+  </div>
+  
+
+  <div class="prop-cols">
+    <div class="prop-desc">
+      <div class="sect-title">Property Description</div>
+      <p>Discover your dream rental at Palm Coast Paradise! This spacious and inviting 3-bedroom, 2-bathroom house is available from July 26, 2023, offering 1,650 square feet of comfortable living space designed to meet all your needs.</p><p>Step inside to find a well-appointed interior featuring in-unit laundry for ultimate convenience. The home is equipped with central cooling and forced air heating, ensuring a pleasant environment year-round. The modern kitchen boasts essential appliances, including a dishwasher and refrigerator, making everyday living a breeze.</p><p>Outside, enjoy the privacy of a fenced yard, perfect for family activities or relaxing in peace. The attached garage provides secure parking and additional storage space. A charming patio area offers an ideal spot for outdoor dining or entertaining guests.</p><p>Situated in a friendly community, this home offers a one-year lease term with a security deposit of $2,400. Don’t miss out on this fantastic opportunity to make this property your new home. Contact us today to schedule a viewing and secure your future residence!</p><p>At Oasis Rentals we are on a mission to provide quality modern rental housing in Palm Coast and Deerfield Beach at an affordable price point. With competitive pricing, swift communication, and safe locations we are confident in our units being the best family rental homes in Palm Coast and Deerfield Beach. Whether you are looking for best townhomes in Palm Coast and Deerfield, or for spacious, pet-friendly single-family rental homes - we got you covered. Discover your ideal rental today!</p><p>Communication is our priority, Reach out with any questions!</p>
+    </div>
+    <div class="agent">
+      <div class="sect-title">Contact Agent</div>
+      <p>Tyler</p>
+      <p>386-516-5774</p>
+      <p><a href="mailto:Tyler@386rent.com">Tyler@386rent.com</a></p>
+    </div>
+  </div>
+
+  <div class="prop-sect">
+    <div class="sect-title">Property Details</div>
+    <div class="details-grid">
+      
+      <div><div class="k">Property Type</div><div class="v">Townhouse</div></div>
+      
+      <div><div class="k">Bedrooms</div><div class="v">3</div></div>
+      
+      <div><div class="k">Bathrooms</div><div class="v">2</div></div>
+      
+      <div><div class="k">Size</div><div class="v">1,650 sqft</div></div>
+      
+      <div><div class="k">Floors</div><div class="v">1</div></div>
+      
+      <div><div class="k">Year Built</div><div class="v">2023</div></div>
+      
+    </div>
+  </div>
+
+  <div class="prop-sect">
+    <div class="sect-title">Property Location</div>
+    <p>3 Unity Ct, Palm Coast, FL, USA</p>
+    
+    <iframe class="map-embed" loading="lazy"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-81.1828448%2C29.437660700000002%2C-81.1668448%2C29.4476607&layer=mapnik&marker=29.4426607%2C-81.1748448"></iframe>
+    
+  </div>
+</div>
+<script>
+const main = document.getElementById('g-main');
+document.querySelectorAll('#g-thumbs img').forEach(t => t.addEventListener('click', () => {
+  main.src = t.src;
+  document.querySelectorAll('#g-thumbs img').forEach(x => x.classList.remove('sel'));
+  t.classList.add('sel');
+}));
+</script>
+
+
+<footer class="site">
+  <div class="wrap">
+    <div class="rule"></div>
+    <div class="foot-grid">
+      <div class="foot-logo">OASIS RENTALS</div>
+      <div>
+        <div class="foot-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.2-.1 1.6-.1 4.8-.1zm0 2c-3.1 0-3.5 0-4.7.1-1.1.1-1.5.2-1.8.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.7-.3 1.8-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.5.3 1.8.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.7.3 1.8.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.5-.2 1.8-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.7.3-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.5-.3-1.8-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.7-.3-1.8-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.4a5.4 5.4 0 110 10.8 5.4 5.4 0 010-10.8zm0 2a3.4 3.4 0 100 6.8 3.4 3.4 0 000-6.8zm5.6-3.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg></a><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a><a href="#" aria-label="X"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1.5 2H8l4.4 5.8L18.9 2zm-1.1 18h1.7L7.1 3.9H5.3L17.8 20z"/></svg></a><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.2 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7 20.4H3.4V9H7v11.4z"/></svg></a><a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.6 2h3.1c.2 1.8 1.3 3.4 3.3 3.9v3.2c-1.2 0-2.3-.4-3.3-1v7.2A6.3 6.3 0 1113.4 9v3.3a3 3 0 103.2 3V2z"/></svg></a>
+        </div>
+        <div class="foot-contact">
+          <p>General Questions:<br><a href="mailto:info@oasis-rentals.com">info@oasis-rentals.com</a><br>(561) 299-0336</p>
+          <p>Palm Coast Properties:<br>386-516-5774<br><a href="mailto:Tyler@386rent.com">Tyler@386rent.com</a></p>
+        </div>
+      </div>
+      <div class="foot-region">Deerfield &amp; Palm Coast</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

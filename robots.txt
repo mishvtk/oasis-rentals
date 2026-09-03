@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://oasis-rentals.com/sitemap.xml
